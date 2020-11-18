@@ -13,6 +13,98 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 3.Skapa en int i som du sätter till noll.
             // 4.Skriv en while-loop körs så länge i är mindre än arrayens längd(Length), och öka i med 1 varje steg i loopen.
             // 5.I while-loopen skriv ut numret på den i:te positionen i arrayen.
+
+
+            /*
+            
+            int[] myArray = new int[3];
+            myArray[0] = 5;
+            myArray[1] = 09;
+            myArray[2] = 119;
+
+            int i = 0;
+
+            while (i < myArray.Length)
+            {
+                Console.WriteLine(myArray[i]);
+                i++;
+            }
+                    
+            /*  
+
+            /*
+             
+            char[] x = new char[3];
+            x[0] = '1';
+            x[1] = '2';
+            x[2] = '3';
+
+            int i = 0;
+
+            while (i < x.Length)
+            {
+                Console.WriteLine(x[i]);
+                i++;
+            }
+
+            */
+
+            /*
+             
+            string[] kungRobin = new string[8];
+            kungRobin[0] = "Kalles";
+            kungRobin[1] = "Kaviar";
+            kungRobin[2] = "Smakar";
+            kungRobin[3] = "väldigt";
+            kungRobin[4] = "Gott";
+            kungRobin[5] = "På";
+            kungRobin[6] = "Mackan";
+            kungRobin[7] = "<3";
+
+            int i = 0;
+
+            while (i < kungRobin.Length)
+            {
+                Console.WriteLine(kungRobin[i]);
+                i++;
+            }
+            
+            */
+
+            /*
+            string[] names = new string[5];
+            names[0] = "Pelle";
+            names[1] = "Plutt";
+            names[2] = "Tog";
+            names[3] = "Ett";
+            names[4] = "Skutt";
+
+            int i = 0;
+
+            while (i < names.Length)
+            {
+                Console.WriteLine(names[i]);
+                i++;
+            }
+            Console.ReadLine();
+            */
+
+            /*
+            int[] garfield = new int[3];
+            garfield[0] = 5;
+            garfield[1] = 63;
+            garfield[2] = 89;
+
+            int i = 0;
+
+            while (i < garfield.Length)
+            {
+                Console.WriteLine(garfield[i]);
+                i++;
+            }
+            Console.ReadLine();
+        
+            */
             /*
             int[] myArray = new int[3];
             myArray[0] = 5;
@@ -49,13 +141,6 @@ namespace Övningsuppgift_3_Campus_Mölndal
            
             */
 
-            // Övningsuppgifter del 3
-            // 1.Skapa ett program som innehåller en array som har plats för tre nummer
-            // 2.Fyll arrayen nummer. T.ex. 5, 7 och 2
-            // 3.Skapa en int i som du sätter till noll.
-            // 4.Skriv en while-loop körs så länge i är mindre än arrayens längd(Length), och öka i med 1 varje steg i loopen.
-            // 5.I while-loopen skriv ut numret på den i:te positionen i arrayen.
-
             /*
             int[] one = new int[5];
             one[0] = 20;
@@ -68,9 +153,9 @@ namespace Övningsuppgift_3_Campus_Mölndal
             {
                 Console.WriteLine(one[i]);
             }
-            */
+           */
 
-            /*
+            /* LEKSTUGA Skriver ut varje index 3 gånger.
             int[] nope = new int[2];
             nope[0] = 2;
             nope[1] = 3;
@@ -88,6 +173,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
                 }
             }
             */
+
             /*
             int[] store = new int[5];
             store[0] = 2;
@@ -214,6 +300,17 @@ namespace Övningsuppgift_3_Campus_Mölndal
 
             // LIST START ÖVNINGAR!!!
 
+            //  6.  Skapa ett program som innehåller en lista för strängar.
+            //  7.  Lägg till en bool keepGoing som du sätter till false.
+            //  8.  Skriv en do -while loop som har keepGoing booleanen som villkor.
+            //  9.  Be användaren mata in en namn i do -while loopen.
+            //  10. Om användarens inmatning är en tom sträng (antingen genom att kolla om strängens längd är noll eller genom att kolla om den är lika med "") sätt keepGoing till false
+            //  11. Annars sätt keepGoing till true och spara namnet till listan.
+            //  12. Skriv ut listan med namn.
+
+
+            // KLADDPAPPER
+
             /*
             List<int> dangIt = new List<int>();
 
@@ -241,6 +338,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
                 Console.WriteLine(item);
             }
             */
+
             /*
             float[] der = new float[6];
 
@@ -257,42 +355,54 @@ namespace Övningsuppgift_3_Campus_Mölndal
             }
             */
 
+            // ÖVNINGARNA LIST 6-12.
             // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-            //  6.  Skapa ett program som innehåller en lista för strängar.
-            //  7.  Lägg till en bool keepGoing som du sätter till false.
-            //  8.  Skriv en do -while loop som har keepGoing booleanen som villkor.
-            //  9.  Be användaren mata in en namn i do -while loopen.
-            //  10. Om användarens inmatning är en tom sträng(antingen genom att kolla om strängens längd är noll eller genom att kolla om den är lika med "") sätt keepGoing till false
-            //  11. Annars sätt keepGoing till true och spara namnet till listan.
-            //  12. Skriv ut listan med namn.
-
             /*
-            List<string> ovning = new List<string>();
+
+            List<string> myList = new List<string>();
             bool keepGoing = false;
+            int i = 0;
 
             do
             {
-                Console.WriteLine("Skriv ditt namn ");
-                ovning.Add(Console.ReadLine());
+                Console.WriteLine("Mata in ett namn ");
+                myList.Add(Console.ReadLine());
                 Console.Clear();
 
-                if (ovning[0] != null || ovning[0] != "")
+                while (i < myList.Count)
                 {
-                    keepGoing = false;
-                    Console.WriteLine(ovning[0]);
+                    if (myList[i] == "")  
+                    {
+                        Console.WriteLine("Du matade inte in något, programmet avslutas.");
+                        Console.ReadLine();
+                        keepGoing = false;
+                        
+                    }
+                    else if (myList[i] != "")
+                    {
+                        
+                        Console.WriteLine(myList[i]);
+                    }
+                    i++;
+                    
                 }
 
             } while (keepGoing == true);
-            
             Console.ReadLine();
+
             */
 
+            /*
+            
+            */
+
+            // ÖVNINGARNA 13-15.
             // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             /*
 
-            // 13.Skapa en programm som frågar användaren efter ett heltal. 
+            // 13.Skapa ett program som frågar användaren efter ett heltal. 
             // 14.Skriv sedan en loop som sparar det talets gångentabell (1 till 10) i en array.
             // 15.Skriv sedan ut arrayen till consollen.
 
@@ -319,7 +429,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
 
             */
 
-            // BRA KOD, Arrayens index börjar på 0 och slutar på 9. I uppgiften ska vi använda tal in * 1 - 10. För att använda arrayens längd som gångertabell behöver vi lägga till +1 på i varje varv i lopen så att index 0 inte blir 0-9 * inmatning utan 1-10 * inmatning.| myArray[i] =  (i+1) * numb;
+            // BRA KOD. Arrayens index börjar på 0 och slutar på 9. I uppgiften ska vi använda tal in * 1 - 10. För att använda arrayens längd som gångertabell behöver vi lägga till +1 på i varje varv i lopen så att index 0 inte blir 0-9 * inmatning utan 1-10 * inmatning.| myArray[i] =  (i+1) * numb;
             /*
 
             Console.WriteLine("Skriv ett heltal!");
@@ -335,6 +445,8 @@ namespace Övningsuppgift_3_Campus_Mölndal
 
             */
 
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ÖVNINGARNA 16-19.
             // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             // 16.Skapa ett program som ber användaren mata in sitt namn. 
@@ -343,6 +455,20 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 19.Skriv ut det nya namnet. 
             // Exempel: Robin blir Nibor
 
+
+
+            Console.WriteLine("Skriv ditt namn");
+            List<char> vowels =  new List<char>();
+            vowels.add
+            
+            
+
+            
+
+
+            // -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // SPEL
+            // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             // Labyrinten
             /*
@@ -414,7 +540,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
             Console.ReadLine();
             */
             // ÖVA DENNA METODEN
-
+            /*
             List<string> coolnames = new List<string>();
 
             coolnames.Add("Håkan");
@@ -426,7 +552,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
 
             Console.WriteLine(string.Join('!', coolnames));
 
-            
+            */
             /*
             // Denna metoden av List är så det ska se ut när vi sen arbetar med kod.
 
@@ -435,8 +561,42 @@ namespace Övningsuppgift_3_Campus_Mölndal
             Console.WriteLine(string.Join('!', notSoCoolNames));
             */
 
+            // ROBINS DEMO FRÅN FÖRELÄSNING 2 VECKA 2.
+
+            /*
+
+            string[] stringArray = new string[]
+            {
+                "January",
+                "feb",
+                "march",
+                "april",
+                "may",
+                "June",
+                "July",
+                "August",
+                "September",
+                "November",
+                "December"
+            };
+
+            string number;
+            int choice;
+
+            do
+            {
+                Console.WriteLine("Select a number from 1-12 ");
+                number = Console.ReadLine();
+                choice = Convert.ToInt32(number);
+
+                if (choice <= 12)
+                {
+                    Console.WriteLine(stringArray[]);
+                }
 
 
+            } while (choice < 12);
+            */
 
             //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
