@@ -327,6 +327,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
                 Console.WriteLine(dangIt[i]);
             }
             */
+
             /*
             List<int> bla = new List<int>();
             bla.Add(34);
@@ -396,16 +397,14 @@ namespace Övningsuppgift_3_Campus_Mölndal
             /*
             
             */
-
+            // -------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGARNA 13-15.
             // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-            /*
 
             // 13.Skapa ett program som frågar användaren efter ett heltal. 
             // 14.Skriv sedan en loop som sparar det talets gångentabell (1 till 10) i en array.
             // 15.Skriv sedan ut arrayen till consollen.
-
+            /*
             Console.WriteLine("Skriv ett heltal!");
             int numb = Convert.ToInt32(Console.ReadLine());
             int[] myArray = new int[10];
@@ -445,6 +444,34 @@ namespace Övningsuppgift_3_Campus_Mölndal
 
             */
 
+            /*
+            
+            Console.WriteLine("Skriv ett tal");
+            int answer = Convert.ToInt32(Console.ReadLine());
+            int[] x = new int[10];
+            Console.Clear();
+            for (int i = 0; i < x.Length; i++)
+            {
+                x[i] = (i + 1) * answer;
+                Console.WriteLine(x[i]);
+            }
+
+            */
+
+            /*
+            Console.WriteLine("Write a number");
+            int opAnswer = Convert.ToInt32(Console.ReadLine());
+            int[] myArray = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray[i] =  (i + 1) * opAnswer;
+                Console.WriteLine(myArray[i]);
+            }
+
+            */
+
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGARNA 16-19.
             // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -455,11 +482,11 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 19.Skriv ut det nya namnet. 
             // Exempel: Robin blir Nibor
 
+           // gör om stringen till en char array.
 
-
-            Console.WriteLine("Skriv ditt namn");
-            List<char> vowels =  new List<char>();
-            vowels.add
+           // Console.WriteLine("Skriv ditt namn");
+           // List<char> vowels =  new List<char>();
+           // vowels.add
             
             
 
@@ -539,7 +566,9 @@ namespace Övningsuppgift_3_Campus_Mölndal
             Console.Clear();
             Console.ReadLine();
             */
+
             // ÖVA DENNA METODEN
+
             /*
             List<string> coolnames = new List<string>();
 
