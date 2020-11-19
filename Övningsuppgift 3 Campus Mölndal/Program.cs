@@ -354,7 +354,10 @@ namespace Övningsuppgift_3_Campus_Mölndal
             {
                 Console.WriteLine(Math.Round(der[i]));
             }
+
             */
+
+
 
             // ÖVNINGARNA LIST 6-12.
             // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -395,8 +398,72 @@ namespace Övningsuppgift_3_Campus_Mölndal
             */
 
             /*
+             
+            List<string> myList = new List<string>();
+            bool go = false;
+            int i = 0;
+
+            do
+            {
+                Console.WriteLine("Skriv ett namn");
+                myList.Add(Console.ReadLine());
+
+                while (i < myList.Count)
+                {
+                    if (myList[i] == "")
+                    {
+                        Console.WriteLine("Ingen inmatning, programmet avslutas.");
+                        Console.ReadLine();
+                        go = false;
+                    }
+                    else if (myList[i] != "")
+                    {
+                        Console.WriteLine(myList[i]);
+                    }
+                    i++;
+                }
+                
+
+
+            } while (go == true);
+
+            Console.ReadLine();
             
+             */
+
+            /*
+             
+            List<string> enLista = new List<string>();
+            bool run = false;
+
+            do
+            {
+                Console.WriteLine("Enter your name: ");
+                enLista.Add(Console.ReadLine());
+                Console.Clear();
+                for (int i = 0; i < enLista.Count; i++)
+                {
+                    if (enLista[i] == "")
+                    {
+                        Console.WriteLine("You did not enter a name, program ends.");
+                        Console.ReadLine();
+                        run = false;
+                    }
+                    else if (enLista[i] != "")
+                    {
+                        Console.WriteLine("You wrote: " + enLista[i]);
+                    }
+                }
+                
+
+            } while (run == true);
+
+            Console.ReadLine();
+
             */
+
+
+
             // -------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGARNA 13-15.
             // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -472,25 +539,120 @@ namespace Övningsuppgift_3_Campus_Mölndal
 
             */
 
+            /*
+             * 
+            Console.WriteLine("Skrev ett tal");
+            string answer = Console.ReadLine();
+            int converted = Convert.ToInt32(answer);
+            int[] anArray = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < anArray.Length; i++)
+            {
+                anArray[i] = (i + 1) * converted;
+                Console.WriteLine(anArray[i]);
+            }
+
+            */
+
+            /*
+              
+            Console.WriteLine("Write a number");
+            int opAnswer = Convert.ToInt32(Console.ReadLine());
+            int[] calculate = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < calculate.Length; i++)
+            {
+                calculate[i] = (i + 1) * opAnswer;
+                Console.WriteLine(calculate[i]);
+            }
+
+            */
+
+            /*
+             
+            Console.WriteLine("Skriv ett heltal");
+            string opIn = Console.ReadLine();
+            int convIn = Convert.ToInt32(opIn);
+            int[] aName = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < aName.Length; i++)
+            {
+                aName[i] = (i + 1) * convIn;
+                Console.WriteLine(aName[i]);
+            }
+
+            */
+
+            /*
+            Console.WriteLine("Write a number");
+            int numb = Convert.ToInt32(Console.ReadLine());
+            int[] myArray = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < myArray.Length; i++)
+            {
+                myArray[i] = (i + 1) * numb;
+                Console.WriteLine(myArray[i]);
+            }
+
+            */
+
+            /*
+             
+            Console.WriteLine("Skriv ett tal");
+            string answer = Console.ReadLine();
+            int convertedAnswer = Convert.ToInt32(answer);
+            int[] X = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < X.Length; i++)
+            {
+                X[i] = (i + 1) * convertedAnswer;
+                Console.WriteLine(X[i]);
+            }
+
+            */
+
+            /*
+             
+            Console.WriteLine("Skriv ett nummer");
+            int answer = Convert.ToInt32(Console.ReadLine());
+            int[] newArray = new int[10];
+            Console.Clear();
+
+            for (int i = 0; i < newArray.Length; i++)
+            {
+                newArray[i] = (i+1) * answer;
+                Console.WriteLine(newArray[i]);
+            }
+
+            */
+            
+
+
+
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGARNA 16-19.
             // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-            // 16.Skapa ett program som ber användaren mata in sitt namn. 
-            // 17.Använd sedan en loop för att spara namnet baklänges i en lista.
-            // 18.Se till så att första bokstaven i det nya namnet är storbokstav och de andra bokstäverna är små.
-            // 19.Skriv ut det nya namnet. 
+            // 16. Skapa ett program som ber användaren mata in sitt namn. 
+            // 17. Använd sedan en loop för att spara namnet baklänges i en lista.
+            // 18. Se till så att första bokstaven i det nya namnet är storbokstav och de andra bokstäverna är små.
+            // 19. Skriv ut det nya namnet. 
             // Exempel: Robin blir Nibor
 
-           // gör om stringen till en char array.
+            // gör om stringen till en char array.
 
-           // Console.WriteLine("Skriv ditt namn");
-           // List<char> vowels =  new List<char>();
-           // vowels.add
-            
-            
+            // Console.WriteLine("Skriv ditt namn");
+            // List<char> vowels =  new List<char>();
+            // vowels.add
 
-            
+
+
+
 
 
             // -------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -627,8 +789,43 @@ namespace Övningsuppgift_3_Campus_Mölndal
             } while (choice < 12);
             */
 
-            //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ÖVNINGAR 4 THURSDAY
+            // -------------------------------------------------------------------------------------------------------------------------------------------------
 
+            // 1.Skapa en lista med 10 elements
+            // 2.Använd Do while för att skirva ut alla element
+            // 3.Använd While för att skriva ut alla element
+            // 4.Använd for för att skriva ut alla element
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ÖVNINGAR 4 THURSDAY
+            // -------------------------------------------------------------------------------------------------------------------------------------------------
+            //  5.Skapa en array av chars som innehåller ditt personnr
+            //  6.Byt ut dina fyra sista till något annat i en loop
+            //  7.Skriv ut det nya personnumret på samma
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ÖVNINGAR 4 THURSDAY
+            // -------------------------------------------------------------------------------------------------------------------------------------------------
+
+            // 8.Skriv en bok med Input. Skapa upp en lista med random strings som tex "Det var en gång", "Och sen föll det ner potatisar från himmeln!"
+            // 9.Be sedan användaren mata in en mening i konsolen
+            // 10.Sätt ihop meningen och valfritt element och printa ut till konsolen
+            // 11.Programmet körs så länge användaren skriver in en string.
+            // 12.För att avsluta programmet så trycker användaren 0.Vid avslut skall hela boken skrivas ut. 
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ÖVNINGAR 4 THURSDAY
+            // -------------------------------------------------------------------------------------------------------------------------------------------------
+
+           // 13.Med hjälp av lika funktioner som listan har inbyggd, kolla om en lista med strings innehåller en specifik text
+           // 14.Skapa upp tre listor av typen int.Två av listorna skall innehålla unika heltal och den tredje skall vara lista1 +lista2.
+           // 15.Skriv ut hela innehåller på listan med, som separera de olika talen.
+           // 16.Skriv ut medelvärdet av alla tal i lista3
+           // 17.Kolla hur många av talen som är jämna
+           // 18.Skapa en fjärde lista som innehåller alla dessa värden
+           // 19.Printa ut listan med en Do while
 
         }
     }
