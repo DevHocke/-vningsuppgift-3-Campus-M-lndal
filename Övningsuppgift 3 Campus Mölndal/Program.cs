@@ -630,7 +630,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
             }
 
             */
-            
+
 
 
 
@@ -793,40 +793,331 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
 
-            // 1.Skapa en lista med 10 elements
-            // 2.Använd Do while för att skirva ut alla element
-            // 3.Använd While för att skriva ut alla element
-            // 4.Använd for för att skriva ut alla element
+            // 1. Skapa en lista med 10 elements
+            // 2. Använd Do while för att skirva ut alla element
+            // 3. Använd While för att skriva ut alla element
+            // 4. Använd for för att skriva ut alla element
+
+            /*
+            List<char> elements = new List<char>();
+            elements.Add('H');
+            elements.Add('E');
+            elements.Add('J');
+            elements.Add('H');
+            elements.Add('O');
+            elements.Add('P');
+            elements.Add('P');
+            elements.Add('G');
+            elements.Add('U');
+            elements.Add('M');
+            elements.Add('M');
+            elements.Add('I');
+            elements.Add('A');
+            elements.Add('N');
+            elements.Add('K');
+            elements.Add('A');
+
+            int i = 0;
+
+            while (i < 16 )
+            {
+                Console.WriteLine(elements[i]);
+                i++;
+            }
+
+            Console.ReadLine();
+
+            */
 
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
-            //  5.Skapa en array av chars som innehåller ditt personnr
-            //  6.Byt ut dina fyra sista till något annat i en loop
-            //  7.Skriv ut det nya personnumret på samma
+            //  5. Skapa en array av chars som innehåller ditt personnr
+            //  6. Byt ut dina fyra sista till något annat i en loop
+            //  7. Skriv ut det nya personnumret på samma
+
+            char[] myArray = new char[12];
+            myArray[0] = 1;
+            myArray[1] = 9;
+            myArray[2] = 7;
+            myArray[3] = 5;
+            myArray[4] = 1;
+            myArray[5] = 2;
+            myArray[6] = 1;
+            myArray[7] = 5;
+            myArray[8] = 1;
+            myArray[9] = 3;
+            myArray[10] = 8;
+            myArray[11] = 7;
+            
 
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
 
-            // 8.Skriv en bok med Input. Skapa upp en lista med random strings som tex "Det var en gång", "Och sen föll det ner potatisar från himmeln!"
-            // 9.Be sedan användaren mata in en mening i konsolen
-            // 10.Sätt ihop meningen och valfritt element och printa ut till konsolen
-            // 11.Programmet körs så länge användaren skriver in en string.
-            // 12.För att avsluta programmet så trycker användaren 0.Vid avslut skall hela boken skrivas ut. 
+            // 8.  Skriv en bok med Input. Skapa upp en lista med random strings som tex "Det var en gång", "Och sen föll det ner potatisar från himmeln!"
+            // 9.  Be sedan användaren mata in en mening i konsolen
+            // 10. Sätt ihop meningen och valfritt element och printa ut till konsolen
+            // 11. Programmet körs så länge användaren skriver in en string.
+            // 12. För att avsluta programmet så trycker användaren 0.Vid avslut skall hela boken skrivas ut. 
 
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
 
-           // 13.Med hjälp av lika funktioner som listan har inbyggd, kolla om en lista med strings innehåller en specifik text
-           // 14.Skapa upp tre listor av typen int.Två av listorna skall innehålla unika heltal och den tredje skall vara lista1 +lista2.
-           // 15.Skriv ut hela innehåller på listan med, som separera de olika talen.
-           // 16.Skriv ut medelvärdet av alla tal i lista3
-           // 17.Kolla hur många av talen som är jämna
-           // 18.Skapa en fjärde lista som innehåller alla dessa värden
-           // 19.Printa ut listan med en Do while
+            // 13. Med hjälp av lika funktioner som listan har inbyggd, kolla om en lista med strings innehåller en specifik text
+            // 14. Skapa upp tre listor av typen int.Två av listorna skall innehålla unika heltal och den tredje skall vara lista1 +lista2.
+            // 15. Skriv ut hela innehåller på listan med, som separera de olika talen.
+            // 16. Skriv ut medelvärdet av alla tal i lista3
+            // 17. Kolla hur många av talen som är jämna
+            // 18. Skapa en fjärde lista som innehåller alla dessa värden
+            // 19. Printa ut listan med en Do while
+
+            // --------------------------------------------------------------------------------------------------------------------------
+            // FREDAG UPPGIFT BANKOMAT
+            // ----------------------------------------------------------------------------------------------------------------------------
+
+            /*
+            Console.WriteLine("Welcome to the bank of zeors and ones");
+            Console.WriteLine("Enter your pin 4 or 6 digits");
+            string answer = Console.ReadLine();
+            int pin = Convert.ToInt32(answer);
+            List<int> changes = new List<int>();
+            bool keepGoing = false;
+            int balance = 0;
+            Console.Clear();
+
+            if (answer.Length == 4 || answer.Length == 6)
+            {
+                Console.WriteLine("Valid PIN, welcome!");
+                System.Threading.Thread.Sleep(1500);
+                Console.Clear();
+                do
+                {
+                    
+                    Console.WriteLine("What do you want to do? ");
+                    Console.WriteLine("1. Deposit money");
+                    Console.WriteLine("2. Withdraw money");
+                    Console.WriteLine("3. Check balance ");
+                    Console.WriteLine("4. Collect interest");
+                    Console.WriteLine("5. EXIT ");
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    Console.Clear();
+
+                    if (choice == 1)
+                    {
+                        Console.WriteLine("How much do you want to deposit? ");
+                        int newMoney = Convert.ToInt32(Console.ReadLine());
+                        balance = (balance + newMoney);
+                        changes.Add(balance);
+                        Console.Clear();
+                        Console.WriteLine("You deposited " + newMoney + " to your account.");
+                        keepGoing = true;
+                    }
+                    else if (choice == 2)
+                    {
+                        if (balance == 0)
+                        {
+                            Console.WriteLine("You are out of money, please add some money.");
+                            keepGoing = true;
+                        }
+                        else if (balance != 0)
+                        {
+                            Console.WriteLine("How much do you want to withdraw? ");
+                            int removeMoney = Convert.ToInt32(Console.ReadLine());
+                            balance = (balance - removeMoney);
+                            changes.Add(balance);
+                            Console.Clear();
+                            Console.WriteLine("You withdraw " + removeMoney + " from your account.");
+                            keepGoing = true;
+                        }
+                    }
+                    else if (choice == 3)
+                    {
+                        Console.WriteLine("Your balance is: " + balance);
+                        keepGoing = true;
+                    }
+                    else if (choice == 4)
+                    {
+                        Console.WriteLine("How many years do you want to wait?");
+                        int years = Convert.ToInt32(Console.ReadLine());
+                        
+                        if (balance > 1 && balance < 1001)
+                        {
+                            for (int i = 0; i < years; i++)
+                            {
+                               balance = (balance * 2);
+                               changes.Add(balance);
+                            }
+                            foreach (var item in changes)
+                            {
+                                Console.WriteLine(item);
+                            }
+
+                        }
+                        else if (balance >= 1001 && balance <= 5000)
+                        {
+                            for (int i = 0; i < years; i++)
+                            {
+                                balance = (balance * 3);
+                                changes.Add(balance);
+                            }
+                            foreach (var item in changes)
+                            {
+                                Console.WriteLine(item);
+                            }
+                        }
+                        else if (balance >= 5001 && balance <= 10000)
+                        {
+                            for (int i = 0; i < years; i++)
+                            {
+                                balance = (balance * 4);
+                                changes.Add(balance);
+                            }
+                            foreach (var item in changes)
+                            {
+                                Console.WriteLine(item);
+                            }
+                        }
+                        else if (balance >= 10001)
+                        {
+                            for (int i = 0; i < years; i++)
+                            {
+                                balance = (balance * 5);
+                                changes.Add(balance);
+                            }
+                            foreach (var item in changes)
+                            {
+                                Console.WriteLine(item);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("FEL INMATNING, GÖR OM GÖR RÄTT PAPPSKALLE :)");
+                        }
+                        keepGoing = true;
+                    }
+                    else if (choice == 5)
+                    {
+                        keepGoing = false;
+                    }
+
+                } while (keepGoing == true);
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid PIN");
+            }
+
+            Console.WriteLine("Thank you for using our bank app you now have " + balance + " money in your account.");
+
+            Console.ReadLine();
+            */
+
+            /*
+            for (int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine(i);
+            }
+            */
+            // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // ÖVNINGSUPPGIFTER 5.
+            // ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // 1.Skapa ett program som har en en array eller lista för strängar som du du kalla kompisLista.
+            // 2.Fyll den med minst tre namn.T.ex.Robin, Björn B, Björn S.
+            // 3.Skriv en foreach-loop för varje sträng kompis i kompisLista.
+            // 4.I din loop skriv ut "Hej " + namnet på en kompis så att alla kompisar har blivit hälsade på när loopen körts klart.
+            // 5.Skriv en metod static void HälsaPå(string kompis)
+            // 6.Flytta innehållet i forloop från uppgift 3.till din metod. 
+            // 7.I ditt huvudprogram(Main) gör så att loopen kallar på HälsaPå(kompis) istället för att skriva ut själv.
+            //    Bonusuppgift: För att göra hälsningen lite mindre stel testa att använda Random rnd = new Random(); och en
+            //    string array med olika hälsningsfraser för att blanda vilka fraser du använder för att hälsa på dina kompisar
+
+            /*
+            List<string> friendsList = new List<string>();
+            friendsList.Add("Pelle");
+            friendsList.Add("BennyBulaDenLillaFula");
+            friendsList.Add("Kalle Stropp");
+
+            NewMethod(friendsList);
+
+            static void NewMethod(List<string> friendsList)
+            {
+                string[] myArray = new string[9];
+                myArray[0] = "Du luktar så gott ";
+                myArray[1] = "Imorgon är en ny dag ";
+                myArray[2] = "Inga bullar för dig ";
+                myArray[3] = "Massa bullar för dig ";
+                myArray[4] = "Kom in i matchen ";
+                myArray[5] = "Nope inte här heller ";
+                myArray[6] = "Vill du ha en kaka ";
+                myArray[7] = "Bussen gick för 5 min sedan ";
+                myArray[8] = "Du är en pappskalle ";
+                
+                
+                for (int i = 0; i < friendsList.Count; i++)
+                {
+                    Random rand = new Random();
+                    String random = myArray[rand.Next(myArray.Length)];
+                    Console.WriteLine(random + friendsList[i]);     
+                }
+            }
+
+            */
+
+            // 8.Skriv en metod sorteraTreTal som tar tre tal som paramterar och returnerar en array.
+            // 9.Skapa en array och placera dina tre tal i storleksordning i arrayen.
+            //    Du kan återanvända kod från tidigare uppgifter för att ta reda på vilket tal som är stört, mellan och minst.
+            // 10.Returnera arrayen.
+            // 11.Testa så att metoden fungerar genom att skriva ut arrayen med hjälp av en foreach-loop i huvudprogrammet.
+
+            /*
+            int[] myArray = new int[3];
+
+            */
+
+
+
+
+
+
+
+
+            // 12.Skriv en metod static int Hexagontal som tar en int n som parameter. 
+            // 13.I metoden skapa en variabel för summan och sätt det till 0.
+            // 14.Skriv en for-loop som går från k = 0 till k < n.
+            // 15.I loopen öka summan med 4 * k + 1.
+            // 16.Returnera summan
+            // 17.I huvudprogrammet anropa på metoden och skriv ut returvärdet till konsolen.
+
+            //   För att kolla om du gjort rätt så ger n = 1-> 1, n = 2-> 6, n = 3-> 15, n = 4-> 28
+
+            //   https://sv.wikipedia.org/wiki/Hexagontal 
+
+
+            //Avancerad uppgift till er som vill ha lite utmaning: 
+
+
+            //Triangeltal är som kan modelleras som trianglar eller trappor.T.ex. 3 = 1 + 2 eller 10 = 1 + 2 + 3 + 4.
+            //19.Skapa en metod som givit ett tal testar med hjälp utav en loop ifall det talet är ett triangel tal.
+
+            //   Så i det här fallet ska du bruteforca talet på något sätt eftersom det är programmering vi ska öva på och inte matte.
+            //20.Om talet är ett triangeltal så ska metoden kalla på en annan metod som skriver ut det i trapform:
+
+            //               10
+
+            //             6  9
+
+            //          3  5  8
+
+            //       1  2  3  4
+
+            //   Dvs varje position i trappan ska skriva ut antalet platser till vänster och under det.
+
 
         }
+
+        
     }
 }
