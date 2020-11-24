@@ -836,7 +836,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
             //  6. Byt ut dina fyra sista till något annat i en loop
             //  7. Skriv ut det nya personnumret på samma
 
-            char[] myArray = new char[12];
+            int[] myArray = new int[12];
             myArray[0] = 1;
             myArray[1] = 9;
             myArray[2] = 7;
@@ -849,7 +849,9 @@ namespace Övningsuppgift_3_Campus_Mölndal
             myArray[9] = 3;
             myArray[10] = 8;
             myArray[11] = 7;
-            
+
+
+
 
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
@@ -1072,38 +1074,76 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 10.Returnera arrayen.
             // 11.Testa så att metoden fungerar genom att skriva ut arrayen med hjälp av en foreach-loop i huvudprogrammet.
 
-            /*
-            int[] myArray = new int[3];
+            // Default är en bool false.
+            //string enIfKontroll = default(string); // Default är en string "". Det går att kontrollera med isNullOrEmpty
 
+            //if (string.IsNullOrEmpty(enIfKontroll))
+            //{
+
+            //}
+            /*
+            int[] sortArray = new int[3];
+            
+            
+             Console.WriteLine("Ange tal 1. ");
+             sortArray[0] = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Ange tal 2. ");
+             sortArray[1] = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine("Ange tal 3. ");
+             sortArray[2] = Convert.ToInt32(Console.ReadLine());
+
+            SorteraTreTal(sortArray);  // Kallar på metoden SorteraTreTal som tar in de tre talen från användaren och sorterar dem med Array.Sort
+
+            foreach (var item in sortArray)
+            {
+                Console.WriteLine(item);
+            }
+            
+
+
+            static int[] SorteraTreTal(int[] bumbiBjörnarna) // Tar in en int Array samt returnerar en int array. 
+            {
+                Array.Sort(bumbiBjörnarna);
+            //  Array.Reverse(bumbiBjörnarna);  // Ändrar ordningen på arrayen.
+                return bumbiBjörnarna;
+            }
             */
 
-
-
-
-
-
-
-
-            // 12.Skriv en metod static int Hexagontal som tar en int n som parameter. 
-            // 13.I metoden skapa en variabel för summan och sätt det till 0.
-            // 14.Skriv en for-loop som går från k = 0 till k < n.
-            // 15.I loopen öka summan med 4 * k + 1.
-            // 16.Returnera summan
-            // 17.I huvudprogrammet anropa på metoden och skriv ut returvärdet till konsolen.
-
+            // 12. Skriv en metod static int Hexagontal som tar en int n som parameter. 
+            // 13. I metoden skapa en variabel för summan och sätt det till 0.
+            // 14. Skriv en for-loop som går från k = 0 till k < n.
+            // 15. I loopen öka summan med 4 * k + 1.
+            // 16. Returnera summan
+            // 17. I huvudprogrammet anropa på metoden och skriv ut returvärdet till konsolen.
             //   För att kolla om du gjort rätt så ger n = 1-> 1, n = 2-> 6, n = 3-> 15, n = 4-> 28
-
             //   https://sv.wikipedia.org/wiki/Hexagontal 
+            
+            /*
 
+            Console.WriteLine(Hexagontal(2));
+            
+            static int Hexagontal(int n)
+            {
+                int sum = default(int); // dafault in är 0.
+
+                for (int k = 0; k < n; k++)
+                {
+                    sum += 4 * k + 1;  // += lägger till summan + det nya värdet. endast = ändrar värdet i sum.
+                }
+
+                return sum;
+            }
+            Console.ReadLine();
+
+            */
 
             //Avancerad uppgift till er som vill ha lite utmaning: 
 
 
-            //Triangeltal är som kan modelleras som trianglar eller trappor.T.ex. 3 = 1 + 2 eller 10 = 1 + 2 + 3 + 4.
-            //19.Skapa en metod som givit ett tal testar med hjälp utav en loop ifall det talet är ett triangel tal.
-
-            //   Så i det här fallet ska du bruteforca talet på något sätt eftersom det är programmering vi ska öva på och inte matte.
-            //20.Om talet är ett triangeltal så ska metoden kalla på en annan metod som skriver ut det i trapform:
+            //Triangeltal är tal som kan modelleras som trianglar eller trappor. T.ex. 3 = 1 + 2 eller 10 = 1 + 2 + 3 + 4.
+            // 19. Skapa en metod som givit ett tal testar med hjälp utav en loop ifall det talet är ett triangel tal.
+            //     Så i det här fallet ska du bruteforca talet på något sätt eftersom det är programmering vi ska öva på och inte matte.
+            // 20. Om talet är ett triangeltal så ska metoden kalla på en annan metod som skriver ut det i trapform:
 
             //               10
 
