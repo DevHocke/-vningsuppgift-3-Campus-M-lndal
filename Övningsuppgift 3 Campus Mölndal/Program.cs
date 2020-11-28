@@ -878,22 +878,67 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
-
             // 8.  Skriv en bok med Input. Skapa upp en lista med random strings som tex "Det var en gång", "Och sen föll det ner potatisar från himmeln!"
             // 9.  Be sedan användaren mata in en mening i konsolen
             // 10. Sätt ihop meningen och valfritt element och printa ut till konsolen
             // 11. Programmet körs så länge användaren skriver in en string.
             // 12. För att avsluta programmet så trycker användaren 0.Vid avslut skall hela boken skrivas ut. 
+            /*  // En väldigt konstig barnbok XD //
+            bool keepGoing = false;
+            List<string> userText = new List<string>();
+            string a = "Det var en gång en väldigt tjock och äcklig gubbe som hade en hund som hette Morgan.";
+            string b = "Alla barnen var livrädda för den tjocka och äckliga gubbens tax Morgan. ";
+            string c = "Morgan hatade alla äckelbarn som skriker och leker på HANS gata ";
+            string d = "En dag smet Morgan från den äckliga tjockisen och bet alla barn han kom åt. ";
+            string e = "Barnen grät och skrek ännu mer vilket gjorde Morgan ännu argare så han bet och bet på barnen.";
 
-            /*
-             * 
-            Console.WriteLine("Skriv en mening till min bok.");
-            string user = Console.ReadLine();
-            string a = "Det var en gång ";
-            string b = "Men alla barnen var glada ändå. ";
-
+            do
+            {
+                Console.WriteLine("Skriv en mening i min bok annars får du en propp!");
+                Console.WriteLine("1. Fortsätt.");
+                Console.WriteLine("2. Jag vill avsluta för jag är en pappskalle");
+                int yesNo = Convert.ToInt32(Console.ReadLine());
+                if (yesNo == 1)
+                {
+                    Console.WriteLine($"{a}");
+                    Console.WriteLine($"{b}"); 
+                    Console.WriteLine($"{c}");
+                    Console.WriteLine($"{d}");
+                    Console.WriteLine($"{e}");
+                    foreach (var item in userText)
+                    {
+                        Console.WriteLine(item);
+                    }
+                    Console.WriteLine($"Skriv din nästa mening här: ");
+                    userText.Add(Console.ReadLine());
+                    
+                }
+                else if (yesNo == 2)
+                {
+                    Console.WriteLine($"{a}");
+                    Console.WriteLine($"{b}");
+                    Console.WriteLine($"{c}");
+                    Console.WriteLine($"{d}");
+                    Console.WriteLine($"{e}");
+                    foreach (var item in userText)
+                    {
+                        Console.WriteLine(item);
+                    }
+                    Console.WriteLine($"Tack för ditt bidrag!");
+                    Console.WriteLine("PRESS ANY KEY TO EXIT");
+                    Console.ReadLine();
+                    keepGoing = false;
+                }
+                else
+                {
+                    Console.WriteLine("Felaktig inmatning pappskalle!");
+                    keepGoing = false;
+                }
+                
+            } 
+            while (keepGoing = true);
+            Console.WriteLine("Program EXIT");
             */
-
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1150,7 +1195,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 17. I huvudprogrammet anropa på metoden och skriv ut returvärdet till konsolen.
             //   För att kolla om du gjort rätt så ger n = 1-> 1, n = 2-> 6, n = 3-> 15, n = 4-> 28
             //   https://sv.wikipedia.org/wiki/Hexagontal 
-            
+
             /*
 
             Console.WriteLine(Hexagontal(2));
