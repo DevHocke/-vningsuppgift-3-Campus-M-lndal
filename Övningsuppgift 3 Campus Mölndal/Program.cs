@@ -883,7 +883,8 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 10. Sätt ihop meningen och valfritt element och printa ut till konsolen
             // 11. Programmet körs så länge användaren skriver in en string.
             // 12. För att avsluta programmet så trycker användaren 0.Vid avslut skall hela boken skrivas ut. 
-            /*  // En väldigt konstig barnbok XD //
+             /*
+            // En väldigt konstig barnbok XD //
             bool keepGoing = false;
             List<string> userText = new List<string>();
             string a = "Det var en gång en väldigt tjock och äcklig gubbe som hade en hund som hette Morgan.";
@@ -911,7 +912,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
                     }
                     Console.WriteLine($"Skriv din nästa mening här: ");
                     userText.Add(Console.ReadLine());
-                    
+                    keepGoing = true;
                 }
                 else if (yesNo == 2)
                 {
@@ -927,18 +928,19 @@ namespace Övningsuppgift_3_Campus_Mölndal
                     Console.WriteLine($"Tack för ditt bidrag!");
                     Console.WriteLine("PRESS ANY KEY TO EXIT");
                     Console.ReadLine();
-                    keepGoing = false;
+                    break;
                 }
                 else
                 {
                     Console.WriteLine("Felaktig inmatning pappskalle!");
-                    keepGoing = false;
+                    break;
                 }
                 
             } 
             while (keepGoing = true);
             Console.WriteLine("Program EXIT");
-            */
+            Console.ReadLine();
+             */
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
