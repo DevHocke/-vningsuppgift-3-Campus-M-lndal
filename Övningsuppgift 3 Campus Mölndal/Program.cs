@@ -835,7 +835,7 @@ namespace Övningsuppgift_3_Campus_Mölndal
             //  5. Skapa en array av chars som innehåller ditt personnr
             //  6. Byt ut dina fyra sista till något annat i en loop
             //  7. Skriv ut det nya personnumret på samma
-
+            /*
             int[] myArray = new int[12];
             myArray[0] = 1;
             myArray[1] = 9;
@@ -850,9 +850,31 @@ namespace Övningsuppgift_3_Campus_Mölndal
             myArray[10] = 8;
             myArray[11] = 7;
 
-
-
-
+            for (int i = 0; i < 12; i++)
+            {
+                if (i == 8)
+                {
+                    myArray[8] = 1;
+                }
+                else if (i == 9)
+                {
+                    myArray[9] = 3;
+                }
+                else if (i == 10)
+                {
+                    myArray[10] = 3;
+                }
+                else if (i == 11)
+                {
+                    myArray[11] = 7;
+                }
+            }
+            foreach (var item in myArray)
+            {
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();
+            */
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
             // -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -862,6 +884,15 @@ namespace Övningsuppgift_3_Campus_Mölndal
             // 10. Sätt ihop meningen och valfritt element och printa ut till konsolen
             // 11. Programmet körs så länge användaren skriver in en string.
             // 12. För att avsluta programmet så trycker användaren 0.Vid avslut skall hela boken skrivas ut. 
+
+            /*
+             * 
+            Console.WriteLine("Skriv en mening till min bok.");
+            string user = Console.ReadLine();
+            string a = "Det var en gång ";
+            string b = "Men alla barnen var glada ändå. ";
+
+            */
 
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             // ÖVNINGAR 4 THURSDAY
@@ -1037,6 +1068,8 @@ namespace Övningsuppgift_3_Campus_Mölndal
             //    string array med olika hälsningsfraser för att blanda vilka fraser du använder för att hälsa på dina kompisar
 
             /*
+              
+            
             List<string> friendsList = new List<string>();
             friendsList.Add("Pelle");
             friendsList.Add("BennyBulaDenLillaFula");
